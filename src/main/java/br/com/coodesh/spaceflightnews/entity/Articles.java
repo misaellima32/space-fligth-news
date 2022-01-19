@@ -18,28 +18,21 @@ public class Articles {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "id", nullable = false)
-  private Integer id;
+  private Long id;
 
-  @Column(nullable = false)
-  private Boolean featured;
+  @Column() private Boolean featured;
 
-  @Column(nullable = false)
-  private String title;
+  @Column() private String title;
 
-  @Column(nullable = false)
-  private String url;
+  @Column() private String url;
 
-  @Column(nullable = false)
-  private String imageUrl;
+  @Column() private String imageUrl;
 
-  @Column(nullable = false)
-  private String newsSite;
+  @Column() private String newsSite;
 
-  @Column(nullable = false)
-  private String summary;
+  @Column() private String summary;
 
-  @Column(nullable = false)
-  private LocalDate publishedAt;
+  @Column() private LocalDate publishedAt;
 
   @OneToMany(
       fetch = FetchType.LAZY,
