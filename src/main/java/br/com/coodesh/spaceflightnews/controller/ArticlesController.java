@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @CrossOrigin("*")
 @RequiredArgsConstructor
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/articles")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class ArticlesController {
   private ArticlesService articlesService;
